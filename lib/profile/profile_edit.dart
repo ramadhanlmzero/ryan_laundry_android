@@ -32,29 +32,30 @@ class ProfileEditState extends State<ProfileEdit> {
             Icons.arrow_back,
             color: Colors.white,
           ),
-          onPressed: () => Navigator.pushReplacementNamed(context, '/'),
+          onPressed: () => Navigator.pop(context, '/profile'),
         ),
         title: Text('Edit Profil'),
         centerTitle: true,
       ),
       body: Container(
-          margin: EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              photoField(),
-              Form(
-                child: Column(
-                  children: [
-                    nameField(),
-                    emailField(),
-                    phoneField(),
-                    addressField(),
-                    profileButton(),
-                  ],
-                ),
+        margin: EdgeInsets.all(30.0),
+        child: Column(
+          children: [
+            photoField(),
+            Form(
+              child: Column(
+                children: [
+                  nameField(),
+                  emailField(),
+                  phoneField(),
+                  addressField(),
+                  profileButton(),
+                ],
               ),
-            ],
-          )),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -163,7 +164,7 @@ class ProfileEditState extends State<ProfileEdit> {
   Widget profileButton() {
     return Container(
       margin: EdgeInsets.all(30),
-      padding: EdgeInsets.only(left: 20, right: 20),
+      padding: EdgeInsets.only(left: 50, right: 50),
       child: RaisedButton(
         padding: EdgeInsets.all(0),
         child: Ink(

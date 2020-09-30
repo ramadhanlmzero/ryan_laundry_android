@@ -76,7 +76,7 @@ class Home extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.person),
               title: Text('Profil'),
-              onTap: () => Navigator.pushNamed(context, '/profile_edit'),
+              onTap: () => Navigator.pushNamed(context, '/profile'),
             ),
             ListTile(
               leading: Icon(Icons.book),
