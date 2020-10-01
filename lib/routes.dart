@@ -4,6 +4,7 @@ import 'package:ryan_laundry/register.dart';
 import 'package:ryan_laundry/home.dart';
 import 'package:ryan_laundry/profile/profile.dart';
 import 'package:ryan_laundry/profile/profile_edit.dart';
+import 'package:ryan_laundry/order/order.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -18,6 +19,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => Profile());
       case '/profile_edit':
         return MaterialPageRoute(builder: (_) => ProfileEdit());
+      case '/order':
+        return MaterialPageRoute(builder: (_) => Order());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

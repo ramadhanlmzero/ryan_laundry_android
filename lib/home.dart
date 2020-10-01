@@ -81,7 +81,7 @@ class Home extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.book),
               title: Text('Riwayat Cucian'),
-              onTap: () {},
+              onTap: () => Navigator.pushNamed(context, '/order'),
             ),
             ListTile(
               leading: Icon(Icons.label),

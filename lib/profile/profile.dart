@@ -216,7 +216,7 @@ class Profile extends StatelessWidget {
                     minHeight: 36.0,
                   ),
                   alignment: Alignment.center,
-                  child: const Text(
+                  child: Text(
                     'Ubah Profil',
                     textAlign: TextAlign.center,
                     style: TextStyle(
