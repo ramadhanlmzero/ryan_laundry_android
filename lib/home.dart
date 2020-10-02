@@ -83,11 +83,6 @@ class Home extends StatelessWidget {
               title: Text('Riwayat Cucian'),
               onTap: () => Navigator.pushNamed(context, '/order'),
             ),
-            ListTile(
-              leading: Icon(Icons.label),
-              title: Text('Lihat Promo'),
-              onTap: () {},
-            ),
             Expanded(child: Container()),
             Column(
               children: <Widget>[

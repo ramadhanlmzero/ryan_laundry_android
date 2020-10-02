@@ -34,7 +34,7 @@ class ProfileEditState extends State<ProfileEdit> {
           ),
           onPressed: () => Navigator.pop(context, '/profile'),
         ),
-        title: Text('Edit Profil'),
+        title: Text('Ubah Profil'),
         centerTitle: true,
       ),
       body: Container(

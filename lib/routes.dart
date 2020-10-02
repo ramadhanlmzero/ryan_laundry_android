@@ -4,6 +4,7 @@ import 'package:ryan_laundry/register.dart';
 import 'package:ryan_laundry/home.dart';
 import 'package:ryan_laundry/profile/profile.dart';
 import 'package:ryan_laundry/profile/profile_edit.dart';
+import 'package:ryan_laundry/profile/profile_password.dart';
 import 'package:ryan_laundry/order/order.dart';
 
 class Router {
@@ -19,6 +20,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => Profile());
       case '/profile_edit':
         return MaterialPageRoute(builder: (_) => ProfileEdit());
+      case '/profile_password':
+        return MaterialPageRoute(builder: (_) => ProfilePassword());
       case '/order':
         return MaterialPageRoute(builder: (_) => Order());
       default:

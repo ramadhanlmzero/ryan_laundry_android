@@ -196,39 +196,79 @@ class Profile extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.all(10),
-            padding: EdgeInsets.only(left: 80, right: 80),
-            child: RaisedButton(
-              padding: EdgeInsets.all(0),
-              child: Ink(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: <Color>[
-                      Colors.blue,
-                      Colors.lightBlue,
-                    ],
-                  ),
-                ),
-                child: Container(
-                  constraints: const BoxConstraints(
-                    minWidth: 150.0,
-                    minHeight: 36.0,
-                  ),
-                  alignment: Alignment.center,
-                  child: Text(
-                    'Ubah Profil',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+            padding: EdgeInsets.only(left: 15, right: 15),
+            child: Row(
+              children: [
+                RaisedButton(
+                  padding: EdgeInsets.all(0),
+                  child: Ink(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: <Color>[
+                          Colors.blue,
+                          Colors.lightBlue,
+                        ],
+                      ),
+                    ),
+                    child: Container(
+                      constraints: const BoxConstraints(
+                        minWidth: 150.0,
+                        minHeight: 36.0,
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Ubah Password',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
+                  onPressed: () =>
+                      Navigator.pushNamed(context, '/profile_password'),
                 ),
-              ),
-              onPressed: () => Navigator.pushNamed(context, '/profile_edit'),
+                SizedBox(
+                  width: 10,
+                ),
+                RaisedButton(
+                  padding: EdgeInsets.all(0),
+                  child: Ink(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: <Color>[
+                          Colors.blue,
+                          Colors.lightBlue,
+                        ],
+                      ),
+                    ),
+                    child: Container(
+                      constraints: const BoxConstraints(
+                        minWidth: 150.0,
+                        minHeight: 36.0,
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Ubah Profil',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  onPressed: () =>
+                      Navigator.pushNamed(context, '/profile_edit'),
+                ),
+              ],
             ),
-          )
+          ),
         ],
       ),
     );
