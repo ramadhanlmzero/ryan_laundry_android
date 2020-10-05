@@ -6,6 +6,7 @@ import 'package:ryan_laundry/profile/profile.dart';
 import 'package:ryan_laundry/profile/profile_edit.dart';
 import 'package:ryan_laundry/profile/profile_password.dart';
 import 'package:ryan_laundry/order/order.dart';
+import 'package:ryan_laundry/notification/notification.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -24,6 +25,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => ProfilePassword());
       case '/order':
         return MaterialPageRoute(builder: (_) => Order());
+      case '/notification':
+        return MaterialPageRoute(builder: (_) => Notif());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

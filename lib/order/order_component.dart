@@ -11,7 +11,7 @@ class OrderComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 5, left: 16, right: 16),
+      margin: EdgeInsets.only(top: 5, left: 10, right: 10),
       child: InkWell(
         child: Card(
           shape: RoundedRectangleBorder(

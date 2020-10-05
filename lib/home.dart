@@ -24,9 +24,7 @@ class Home extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.notifications, color: Colors.white),
-            onPressed: () {
-              // do something
-            },
+            onPressed: () => Navigator.pushNamed(context, "/notification"),
           ),
         ],
       ),
